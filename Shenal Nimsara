@@ -16,7 +16,7 @@
 
 <body>
   <div id="loader">
-    <img src="images/loader.gif" alt="">
+    <img src="loader.gif" alt="">
   </div>
     <div class="img-header">
       <div class="nav-bar-pc">
@@ -30,7 +30,7 @@
         </nav>
       </div>
       <div class="nav-bar-mobile">
-        <img src="images/menu.png" id="menuicon" onclick="navigate()">
+        <img src="menu.png" id="menuicon" onclick="navigate()">
         <nav id="nav">
           <ul>
             <li><a href="">ABOUT ME</a></li>
@@ -58,7 +58,7 @@
       <p>My name is Shenal Nimsara.I am studying in Ananda College.I am a Sri Lankan student.My favourite Subject is Ict and I like coding,graphics design and programming.</p>
     </section>
     <section id="profile">
-      <img src="images/Pcimg.png" alt="">
+      <img src="Pcimg.png" alt="">
       
     </section>
   </div>
@@ -79,7 +79,7 @@
     <section>
       <h1>Projects</h1>
       <div class="images">
-        <img src="images/code.gif" alt="">
+        <img src="code.gif" alt="">
       </div>
       <h2>Whoops! No projects yet!</h2>
     </section>
