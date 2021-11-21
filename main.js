@@ -8,14 +8,14 @@ sidebar.style.right = -300 + "px";
    if (sidebar.style.right == -300 + "px")
    {
      sidebar.style.right = 0 + "px";
-     menuicon.src = "images/menuclose.png"
+     menuicon.src = "menuclose.png"
      
    }
    
    else
    {
      sidebar.style.right = -300 + "px";
-     menuicon.src = "images/menu.png"
+     menuicon.src = "menu.png"
    }
  }
  
