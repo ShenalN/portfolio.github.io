@@ -10,7 +10,7 @@
 .img-header {
   width: 100vw;
   height: 600px;
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/bg.jpeg);
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.jpeg);
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@
 }
 
 #contact section:nth-child(2) {
-  background: url(images/wave.png);
+  background: url(wave.png);
   width: 100vw;
   height: 27vh;
   margin: 0;
