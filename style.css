@@ -1,0 +1,676 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.img-header {
+  width: 100vw;
+  height: 600px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/bg.jpeg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.nav-bar-mobile {
+  display: none;
+}
+
+.nav-bar-pc {
+  background: rgba(0,0,0,0);
+  position: fixed;
+  width: 100vw;
+  z-index: 21;
+  transition: 1s;
+}
+
+.nav-bar-pc nav {
+  padding: 25px 10px;
+  margin-left: 5px;
+}
+
+.nav-bar-pc nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.nav-bar-pc nav ul li a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-bar-pc nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 6px;
+  background: #00D1AA;
+  bottom: -10px;
+  left: 10px;
+  border-radius: 20px;
+  transition: 0.7s;
+}
+
+.nav-bar-pc nav ul li:hover a::before {
+  width: 60px;
+}
+
+
+
+
+
+
+
+
+
+/*header text section*/
+
+.headertxt {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headertxt h2{
+  font-size: 60px;
+  color: white;
+}
+
+.headertxt .iam {
+  width: 90%;
+  overflow: hidden;
+  height: 100px;
+  background: transparent;
+  padding: 10px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.iam h1{
+  position: relative;
+  font-size: 70px;
+  color: #00FFCF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: -140px;
+  }
+  50% {
+    top: -280px;
+  }
+  75% {
+    top: -400px;
+  }
+  
+  100% {
+    top: 0px;
+  }
+}
+
+
+
+
+
+/*mobile nav*/
+
+.nav-bar-mobile img{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #00FFCF;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  margin: 20px;
+  z-index: 21;
+}
+
+
+.nav-bar-mobile nav {
+  position: fixed;
+  right: -300px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  z-index: 20;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 30px black;
+  backdrop-filter: blur(3px);
+  transition: 0.5s;
+}
+
+.nav-bar-mobile ul{
+  margin-top: 30px;
+}
+.nav-bar-mobile ul li{
+  padding: 10px 20px;
+  margin: 30px 10px;
+  list-style: none;
+}
+
+.nav-bar-mobile ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
+
+/*about me section*/
+
+#about {
+  width: 100vw;
+  height: 500px;
+  background: transparent;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-me {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#about-me h1{
+  font-size: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#about-me h1:before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  background: #00AF07;
+  border-radius: 30px;
+  bottom: -15px;
+  animation: animate 7s infinite;
+}
+
+@keyframes animate {
+  0%{
+    width: 0;
+  }
+  10%{
+    width: 300px;
+  }
+  30% {
+    width: 0;
+    background: #00AF07;
+  }
+  31%{
+    background: red;
+  }
+  50% {
+    width: 300px;
+  }
+  70%
+  {
+    width: 0;
+    background: red;
+  }
+  71%{
+    background: #B600FF;
+  }
+  90%{
+    width: 300px;
+    background: #B600FF;
+  }
+  100%{
+    width: 0;
+    background: #B600FF;
+  }
+}
+
+#about-me p{
+  font-size: 30px;
+  width: 400px;
+}
+
+#profile img{
+  width: 55vw;
+  height: 25vh;
+}
+
+
+/*skills section*/
+
+#skills h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  color: gray;
+}
+
+#skills h1::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: black;
+  bottom: -20px;
+  margin-left: 5%;
+}
+
+#skills p{
+  font-size: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around ;
+  align-items: center;
+  font-weight: 900;
+  color: white;
+}
+
+#skills p span{
+  margin-top: 60px;
+  padding: 25px 10px;
+  position: relative;
+  width: 90%;
+  text-align: center;
+  border-radius: 60px;
+  overflow: hidden;
+  animation: cchange 8s infinite;
+  color: white;
+}
+
+#skills p span:nth-child(1) {
+  animation-delay: 1s;
+}
+
+
+#skills p span:nth-child(2) {
+  animation-delay: 2s;
+}
+
+
+#skills p span:nth-child(3) {
+  animation-delay: 3s;
+}
+
+#skills p span:nth-child(4) {
+  animation-delay: 4s;
+}
+
+@keyframes cchange {
+  to{
+    color: #000;
+  }
+}
+
+#skills span::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to left,#00FFF1,#00FF86);
+  z-index: -1;
+  left: 0;
+  top: 0;
+  animation: spanAnim 8s infinite;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+
+#skills span:nth-child(1)::before {
+  animation-delay: 1s;
+}
+
+#skills span:nth-child(2)::before {
+  animation-delay: 2s;
+}
+
+#skills span:nth-child(3)::before {
+  animation-delay: 3s;
+}
+
+#skills span:nth-child(4)::before {
+  animation-delay: 4s;
+}
+
+@keyframes spanAnim
+{
+  
+  100%{
+    width: 100%;
+  }
+}
+
+#skills {
+  margin-left: 30px;
+}
+
+
+
+
+
+
+/*projects section*/
+
+#projects {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+}
+
+#projects h1{
+  position: relative;
+  font-size: 50px;
+  color: gray;
+}
+#projects section{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#projects section img{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  animation: wchange 3s infinite;
+}
+
+
+
+#projects h1::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: black;
+    bottom: -20px;
+    margin-left: 20%;
+}
+
+#projects section h2{
+  font-size: 40px;
+  font-weight: 900;
+  word-spacing: 7px;
+}
+
+#projects {
+  margin-bottom: 100px;
+}
+
+/*contact me section*/
+
+#contact {
+  position: relative;
+  width: 100vw;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  bottom: 0;
+  
+}
+
+#contact section h1{
+  position: relative;
+  font-size: 50px;
+  color: gray;
+  margin-bottom: 50px;
+}
+
+#contact section h1::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: black;
+    bottom: -20px;
+    margin-left: 20%;
+}
+
+#contact section{
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact section:nth-child(2) {
+  background: url(images/wave.png);
+  width: 100vw;
+  height: 27vh;
+  margin: 0;
+}
+
+#contact section div p{
+  font-size: 30px ;
+}
+
+#contact section div{
+  margin-top: 30px;
+}
+
+/*loader*/
+
+#loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 30;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/*media queries*/
+
+@media only screen and (max-width: 900px) {
+  .nav-bar-mobile {
+    display: block;
+  }
+  
+  .nav-bar-pc {
+    display: none;
+  }
+  
+  .img-header {
+    background-position: center;
+    height: 350px;
+  }
+  
+  .headertxt h2 {
+    font-size: 30px;
+  }
+  
+  .headertxt h1{
+    animation: slide 5s infinite;
+  }
+  
+  .headertxt .iam {
+    height: 60px;
+  }
+  
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25%{
+      top: -50px;
+    }
+    50% {
+      top: -110px;
+    }
+    75%{
+      top: -170px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+  .headertxt .iam h1 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  #about{
+    flex-direction: column;
+  }
+  
+  #about-me h1{
+    font-size: 35px;
+  }
+  
+  #about-me p{
+    font-size: 18px;
+    width: 350px;
+  }
+  
+  #about-me h1:before {
+    width: 200px;
+    height: 8px;
+    
+  
+  }
+  
+  #profile {
+    margin-top: 30px;
+  }
+  
+  #about section img{
+    width: 90vw;
+    height: 30vh;
+  }
+  
+  
+  
+  @keyframes animate {
+  0%{
+    width: 0;
+  }
+  10%{
+    width: 200px;
+  }
+  30% {
+    width: 0;
+    background: #00AF07;
+  }
+  31%{
+    background: red;
+  }
+  50% {
+    width: 200px;
+  }
+  70%
+  {
+    width: 0;
+    background: red;
+  }
+  71%{
+    background: #B600FF;
+  }
+  90%{
+    width: 200px;
+    background: #B600FF;
+  }
+  100%{
+    width: 0;
+    background: #B600FF;
+  }
+}
+
+  #skills h1 {
+    font-size: 25px;
+  }
+  
+  #skills h1::before {
+    width: 50px;
+    height: 2px;
+    bottom: -10px;
+  }
+  
+  #skills span{
+    font-size: 20px;
+    width: 150px;
+    padding: 0;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #projects h1{
+    font-size: 25px;
+  }
+  
+  #projects h1::before  {
+    width: 50px;
+    height: 2px;
+    margin-left: 20%;
+    bottom: -10px;
+  }
+  
+  #projects section h2{
+    font-size: 20px;
+  }
+  
+  #contact section h1{
+    font-size: 25px;
+  }
+  
+  #contact section h1::before {
+    width: 50px;
+    height: 2px;
+    margin-left: 20%;
+    bottom: -10px;
+    align-items: center;
+  }
+  
+  #contact section div p{
+    font-size: 20px;
+  }
+  
+  #contact #img-image {
+    width: 100vw;
+    margin: 0;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 16vh;
+  }
+  
+  #noid {
+    margin-bottom: 30px;
+  }
+  
+  
+
+}
