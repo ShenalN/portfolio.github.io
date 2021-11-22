@@ -6,8 +6,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: sans-serif;
-  scroll-behavior: smooth;
+
   
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .img-header {
