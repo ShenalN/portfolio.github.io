@@ -257,9 +257,13 @@ html {
   width: 400px;
 }
 
+#profile {
+  overflow: auto;
+}
+
 #profile img{
   width: 55vw;
-  height: 25vh;
+  height: auto;
 }
 
 
